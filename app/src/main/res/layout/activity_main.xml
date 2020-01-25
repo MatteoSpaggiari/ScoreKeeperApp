@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for the Footbale/Soccer score counter. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    style="@style/AppTheme.Body">
+
+    <LinearLayout
+        android:id="@+id/container_teams"
+        style="@style/AppTheme.Body.ContainerTeam">
+
+        <LinearLayout
+            android:id="@+id/container_info_team_a"
+            style="@style/AppTheme.Body.ContainerInfoTeam">
+
+            <Spinner
+                android:id="@+id/team_list_a"
+                style="@style/AppTheme.Spinner"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/team_a"
+                android:text="Team A"
+                style="@style/AppTheme.Body.TextViewTeam" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:text="0"
+                style="@style/AppTheme.Body.TextViewScoreTeam" />
+
+            <TextView
+                android:id="@+id/team_a_num_players"
+                android:text="Players: 11"
+                style="@style/AppTheme.Body.TextViewStatisticTeam" />
+
+            <TextView
+                android:id="@+id/team_a_corner"
+                android:text="Corner: 0"
+                style="@style/AppTheme.Body.TextViewStatisticTeam" />
+
+            <TextView
+                android:id="@+id/team_a_offside"
+                android:text="Offside: 0"
+                style="@style/AppTheme.Body.TextViewStatisticTeam" />
+
+            <Button
+                android:id="@+id/team_a_goal"
+                android:text="Goal"
+                style="@style/AppTheme.Body.Button"
+                android:onClick="addScoreTeamA" />
+
+            <Button
+                android:id="@+id/team_a_corner_button"
+                android:text="Corner"
+                style="@style/AppTheme.Body.Button"
+                android:onClick="addCornerTeamA" />
+
+            <Button
+                android:id="@+id/team_a_offside_button"
+                android:text="Offside"
+                style="@style/AppTheme.Body.Button"
+                android:onClick="addOffsideTeamA" />
+
+            <Button
+                android:id="@+id/team_a_red_card_button"
+                android:text="Red Card"
+                style="@style/AppTheme.Body.Button"
+                android:onClick="addRedCardTeamA" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/partition_view"
+            style="@style/AppTheme.Body.PartitionView" />
+
+        <LinearLayout
+            android:id="@+id/container_info_team_b"
+            style="@style/AppTheme.Body.ContainerInfoTeam">
+
+            <Spinner
+                android:id="@+id/team_list_b"
+                style="@style/AppTheme.Spinner"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/team_b"
+                android:text="Team B"
+                style="@style/AppTheme.Body.TextViewTeam" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:text="0"
+                style="@style/AppTheme.Body.TextViewScoreTeam" />
+
+            <TextView
+                android:id="@+id/team_b_num_players"
+                android:text="Players: 11"
+                style="@style/AppTheme.Body.TextViewStatisticTeam" />
+
+            <TextView
+                android:id="@+id/team_b_corner"
+                android:text="Corner: 0"
+                style="@style/AppTheme.Body.TextViewStatisticTeam" />
+
+            <TextView
+                android:id="@+id/team_b_offside"
+                android:text="Offside: 0"
+                style="@style/AppTheme.Body.TextViewStatisticTeam" />
+
+            <Button
+                android:id="@+id/team_b_goal"
+                android:text="Goal"
+                style="@style/AppTheme.Body.Button"
+                android:onClick="addScoreTeamB" />
+
+            <Button
+                android:id="@+id/team_b_corner_button"
+                android:text="Corner"
+                style="@style/AppTheme.Body.Button"
+                android:onClick="addCornerTeamB" />
+
+            <Button
+                android:id="@+id/team_b_offside_button"
+                android:text="Offside"
+                style="@style/AppTheme.Body.Button"
+                android:onClick="addOffsideTeamB" />
+
+            <Button
+                android:id="@+id/team_b_red_card_button"
+                android:text="Red Card"
+                style="@style/AppTheme.Body.Button"
+                android:onClick="addRedCardTeamB" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:text="Reset"
+        style="@style/AppTheme.Body.ResetButton"
+        android:onClick="resetApp" />
+
+</RelativeLayout>

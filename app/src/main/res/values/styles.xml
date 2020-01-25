@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- Body Container -->
+    <style name="AppTheme.Body">
+        <item name="android:background">@color/colorBody</item>
+    </style>
+
+    <!-- Container Team -->
+    <style name="AppTheme.Body.ContainerTeam">
+        <item name="android:background">@color/colorBody</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <!-- Spinner -->
+    <style name="AppTheme.Spinner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <!-- View Partition -->
+    <style name="AppTheme.Body.PartitionView">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <!-- Container Info Team -->
+    <style name="AppTheme.Body.ContainerInfoTeam">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- TextView Team -->
+    <style name="AppTheme.Body.TextViewTeam">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@color/colorTextTeam</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- TextView Statistic Team -->
+    <style name="AppTheme.Body.TextViewStatisticTeam">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingLeft">22dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:textColor">@color/colorTextTeam</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- TextView Score Team -->
+    <style name="AppTheme.Body.TextViewScoreTeam">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:textColor">@color/colorTextScoreTeam</item>
+        <item name="android:textSize">56sp</item>
+    </style>
+
+    <!-- Button -->
+    <style name="AppTheme.Body.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginLeft">22dp</item>
+        <item name="android:layout_marginRight">22dp</item>
+        <item name="android:background">@color/colorButton</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Reset Button -->
+    <style name="AppTheme.Body.ResetButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">32dp</item>
+        <item name="android:background">@color/colorButton</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+</resources>
